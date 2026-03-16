@@ -1,0 +1,16 @@
+[package]
+name = "stremio-purge"
+version = "0.1.0"
+edition = "2024"
+description = "Automatically clears continue watching"
+license = "MIT"
+authors = ["SeanHaz"]
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+chrono = "0.4.44"
+dotenvy = "0.15"
+log = "0.4"
+env_logger = "0.11"
