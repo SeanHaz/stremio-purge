@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+    <link rel="/images/apple-touch-icon" href="/apple-touch-icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stremio Purge</title>
+    <link rel="stylesheet" href="/config/config.css">
+  </head>
+  <body>
+    <div class="card">
+      <h1>Types to Purge</h1>
+      <div class="config-buttons">
+        <button id="btn-all" class="config-btn">
+          All Types
+          <span class="checkmark">✓</span>
+        </button>
+        <button id="btn-movies" class="config-btn">
+          Movies
+          <span class="checkmark">✓</span>
+        </button>
+        <button id="btn-series" class="config-btn">
+          Series
+          <span class="checkmark">✓</span>
+        </button>
+        <button id="btn-tv" class="config-btn">
+          TV Channels
+          <span class="checkmark">✓</span>
+        </button>
+      </div>
+
+      <div class="action-row">
+        <button id="update-btn" class="action-btn">Purge Library Now</button>
+      </div>
+        
+      <div id="status"></div>
+
+      <button id="logout-btn" class="action-btn">Sign Out</button>
+    </div>
+    <script src="/config/config.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 20px;
+    background: #141414;
+    color: #fff;
+}
+.card {
+    background: #1f1f1f;
+    padding: 32px 28px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+h1 {
+    text-align: center;
+    margin: 0 0 28px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.config-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+.config-btn {
+    padding: 18px 20px;
+    font-size: 17px;
+    font-weight: 500;
+    border: 2px solid #333;
+    background: #2a2a2a;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.config-btn:hover {
+    border-color: #e50914;
+}
+.config-btn.active {
+    background: #e50914;
+    border-color: #e50914;
+    color: white;
+}
+.config-btn .checkmark {
+    font-size: 22px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.config-btn.active .checkmark {
+    opacity: 1;
+}
+.action-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.action-btn {
+    flex: 1;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#update-btn {
+    background: #e50914;
+    color: white;
+}
+#update-btn:hover {
+    background: #f40612;
+}
+#logout-btn {
+    background: transparent;
+    color: #aaa;
+    border: 2px solid #444;
+}
+#logout-btn:hover {
+    border-color: #e50914;
+    color: #fff;
+}
+#status {
+    margin-top: 12px;
+    padding: 14px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    background: #1a3c1a;
+    color: #4ade80;
+    display: none;
+}
+    

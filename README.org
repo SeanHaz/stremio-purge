@@ -1,0 +1,5 @@
+* USE AT YOUR OWN RISK
+* Build and run locally:
+#+begin_src bash
+  COOKIE_SECRET=$(openssl rand -base64 64) SQLX_OFFLINE=true DATABASE_URL=NotPresent cargo run
+#+end_src

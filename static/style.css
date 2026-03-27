@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 20px;
+    background: #141414;
+    color: #fff;
+}
+.card {
+    background: #1f1f1f;
+    padding: 32px 28px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+h1 {
+    text-align: center;
+    margin: 0 0 28px;
+    font-size: 24px;
+    font-weight: 600;
+}
+input {
+    width: 100%;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+    background: #2a2a2a;
+    border: 2px solid #333;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    box-sizing: border-box;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+input:focus {
+    border-color: #e50914;
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.2);
+}
+input::placeholder {
+    color: #888;
+}
+button {
+    width: 100%;
+    padding: 16px;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+button:hover {
+    background: #f40612;
+}
+#result {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: center;
+}
+pre, code {
+    word-break: break-all;
+    background: #2a2a2a;
+    padding: 12px;
+    border-radius: 8px;
+    color: #e0e0e0;
+    font-family: monospace;
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    overflow-x: auto;
+}

@@ -1,0 +1,7 @@
+[workspace]
+members= [
+  "crates/db",
+  "crates/stremio-purge",
+  "crates/stremio-api",
+]
+resolver = "2"

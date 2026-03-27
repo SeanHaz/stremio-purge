@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+    <link rel="/images/apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stremio Purge</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Stremio Login</h1>
+      <form onsubmit=login() action="javascript:void(0);">
+	<input type="email" onsubmit="login()" id="email" placeholder="your@email.com" autocomplete="email">
+        <input type="password" onsubmit="login()" id="password" placeholder="Password" autocomplete="current-password">
+	<input type="text" onsubmit="login()" id="auth_key" placeholder="auth_key (optional)" autocomplete="current-password">
+        <button onclick="login()">Login</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
