@@ -2,4 +2,5 @@
 * Build and run locally:
 #+begin_src bash
   COOKIE_SECRET=$(openssl rand -base64 64) SQLX_OFFLINE=true DATABASE_URL=NotPresent cargo run
+  # Then visit localhost:8080 to see the login page
 #+end_src
