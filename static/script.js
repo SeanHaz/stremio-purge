@@ -42,3 +42,23 @@ async function login() {
         resultDiv.innerHTML = `Failed to connect: ${err.message}`;
     }
 }
+
+function toggleLoginMode() {
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    const authKeyInput = document.getElementById('auth_key');
+    const toggleBtn = document.getElementById('toggle-btn');
+
+    if (emailInput.type === 'hidden') {
+        emailInput.type = 'email';
+        passwordInput.type = 'password';
+        authKeyInput.type = 'hidden';
+        toggleBtn.textContent = 'Use Auth Key';
+    }
+    else {
+        emailInput.type = 'hidden';
+        passwordInput.type = 'hidden';
+        authKeyInput.type = 'text';
+        toggleBtn.textContent = 'Use Email & Password';
+    }
+}

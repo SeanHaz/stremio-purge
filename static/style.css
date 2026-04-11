@@ -43,6 +43,7 @@ input::placeholder {
 button {
     width: 100%;
     padding: 16px;
+    margin-bottom: 16px;
     background: #e50914;
     color: white;
     border: none;
