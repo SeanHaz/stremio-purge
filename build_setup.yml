@@ -1,0 +1,6 @@
+- name: Set build environment variables for cargo-dist
+  run: |
+    echo "COOKIE_SECRET=$(openssl rand -base64 48 | tr -d '\n=')" >> $GITHUB_ENV
+    echo "SQLX_OFFLINE=true" >> $GITHUB_ENV
+    echo "DATABASE_URL=NotPresent" >> $GITHUB_ENV
+  shell: bash

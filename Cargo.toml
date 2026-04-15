@@ -5,3 +5,16 @@ members= [
   "crates/stremio-api",
 ]
 resolver = "2"
+
+[workspace.package]
+repository = "https://github.com/SeanHaz/stremio-purge"
+version = "0.2.0"
+edition = "2024"
+description = "Automatically clears continue watching"
+license = "MIT"
+authors = ["SeanHaz"]
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
