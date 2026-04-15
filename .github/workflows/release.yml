@@ -132,11 +132,6 @@ jobs:
           echo "COOKIE_SECRET=super-secret-development-key-1234567890-1234567890-1234567890-1234567890" >> $GITHUB_ENV
           echo "SQLX_OFFLINE=true" >> $GITHUB_ENV
           echo "DATABASE_URL=NotPresent" >> $GITHUB_ENV
-
-          # DEBUG — remove these lines later once it's working
-          echo "✅ DEBUG: COOKIE_SECRET set (truncated): $(echo $COOKIE_SECRET | cut -c1-20)..."
-          echo "✅ DEBUG: SQLX_OFFLINE = $SQLX_OFFLINE"
-          echo "✅ DEBUG: DATABASE_URL = $DATABASE_URL"
         shell: "bash"
       - name: Install dist
         run: ${{ matrix.install_dist.run }}

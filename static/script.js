@@ -3,18 +3,30 @@ async function login() {
     const password = document.getElementById('password').value;
     const auth_key = document.getElementById('auth_key').value.trim();
     const resultDiv = document.getElementById('result');
-    if ((!auth_key && (!email || !password)) || (!!auth_key && !!email) || (!!auth_key && !!password)) {
-        resultDiv.style.background = '#3c1a1a';
-        resultDiv.style.color = '#f87171';
-        resultDiv.innerHTML = 'Please provide auth key OR email and password';
-        return;
+    const toggle_btn = document.getElementById('toggle-btn');
+    const is_auth = toggle_btn.innerHTML.includes("Email");
+    if (is_auth) {
+	if(!auth_key){
+	    resultDiv.style.background = '#3c1a1a';
+            resultDiv.style.color = '#f87171';
+            resultDiv.innerHTML = 'Please provide auth_key';
+            return;
+	}
+    } else {
+	if(!email || !password){
+	    resultDiv.style.background = '#3c1a1a';
+            resultDiv.style.color = '#f87171';
+            resultDiv.innerHTML = 'Please provide email and password';
+            return;
+	}
     }
 
     resultDiv.style.background = '#422e1a';
     resultDiv.style.color = '#fbbf24';
     resultDiv.innerHTML = 'Logging in...';
+
     try {
-	const payload = !!auth_key ? { auth_key } : { email, password };
+	const payload = is_auth ? { auth_key } : { email, password };
         const resp = await fetch('/api/login', {
 	    method: 'POST',
 	    headers: { 'Content-Type': 'application/json' },
