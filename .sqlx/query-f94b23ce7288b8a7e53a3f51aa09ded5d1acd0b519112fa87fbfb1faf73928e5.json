@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "UPDATE users SET config_mask = $1 WHERE id = $2",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "f94b23ce7288b8a7e53a3f51aa09ded5d1acd0b519112fa87fbfb1faf73928e5"
+}

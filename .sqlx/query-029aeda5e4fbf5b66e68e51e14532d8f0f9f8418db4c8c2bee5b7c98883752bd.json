@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "\n        INSERT INTO users (id, auth_key, all_timestamp, series_timestamp, movies_timestamp, tv_timestamp, config_mask)\n        VALUES ($1, $2, 0, 0, 0, 0, 0)\n        ON CONFLICT(id) DO UPDATE SET\n            auth_key = $2\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "029aeda5e4fbf5b66e68e51e14532d8f0f9f8418db4c8c2bee5b7c98883752bd"
+}

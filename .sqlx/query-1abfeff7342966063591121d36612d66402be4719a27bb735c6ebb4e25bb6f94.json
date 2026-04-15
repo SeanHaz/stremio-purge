@@ -1,0 +1,56 @@
+{
+  "db_name": "SQLite",
+  "query": "\n        SELECT \n            id              as \"id!: String\",\n            auth_key        as \"auth_key!: String\",\n            all_timestamp   as \"all_timestamp!: i64\",\n            series_timestamp   as \"series_timestamp!: i64\",\n            movies_timestamp   as \"movies_timestamp!: i64\",\n            tv_timestamp   as \"tv_timestamp!: i64\",\n            config_mask          as \"config_mask!: i64\"\n        FROM users \n        WHERE id = $1\n        ",
+  "describe": {
+    "columns": [
+      {
+        "name": "id!: String",
+        "ordinal": 0,
+        "type_info": "Text"
+      },
+      {
+        "name": "auth_key!: String",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "all_timestamp!: i64",
+        "ordinal": 2,
+        "type_info": "Integer"
+      },
+      {
+        "name": "series_timestamp!: i64",
+        "ordinal": 3,
+        "type_info": "Integer"
+      },
+      {
+        "name": "movies_timestamp!: i64",
+        "ordinal": 4,
+        "type_info": "Integer"
+      },
+      {
+        "name": "tv_timestamp!: i64",
+        "ordinal": 5,
+        "type_info": "Integer"
+      },
+      {
+        "name": "config_mask!: i64",
+        "ordinal": 6,
+        "type_info": "Integer"
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "1abfeff7342966063591121d36612d66402be4719a27bb735c6ebb4e25bb6f94"
+}

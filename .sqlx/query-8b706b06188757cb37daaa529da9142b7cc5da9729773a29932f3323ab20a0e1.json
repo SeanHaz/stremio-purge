@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "\n        INSERT OR REPLACE INTO users \n        (id, auth_key, all_timestamp, series_timestamp, movies_timestamp, tv_timestamp, config_mask)\n        VALUES ($1, $2, $3, $4, $5, $6, $7)\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 7
+    },
+    "nullable": []
+  },
+  "hash": "8b706b06188757cb37daaa529da9142b7cc5da9729773a29932f3323ab20a0e1"
+}
